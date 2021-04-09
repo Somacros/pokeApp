@@ -30,7 +30,7 @@ class App extends Component {
 
   getPokemonTypes = () => {
 
-    axios.get('http://localhost:8081/api/types')
+    axios.get('https://somacros-pokedex-api.herokuapp.com/api/types')
     .then( types => {
       this.setState({ types: types.data })
     }).catch(err => {
@@ -43,7 +43,7 @@ class App extends Component {
 
     setTimeout(() => {
       
-      axios.get(`http://localhost:8081/api/pokemon?offset=${ this.state.pokedex.length }`)
+      axios.get(`https://somacros-pokedex-api.herokuapp.com/api/pokemon?offset=${ this.state.pokedex.length }`)
       .then( pokemons => {
         this.setState({ pokedex: this.state.pokedex.concat(pokemons.data.spritesArray) })
         
@@ -52,6 +52,8 @@ class App extends Component {
         } else {
           this.setState({ hasMore: false })
         }
+
+        console.log(pokemons);
   
       }).catch(err => {
         console.log(err);
