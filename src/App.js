@@ -40,8 +40,6 @@ class App extends Component {
   }
 
   getMorePokemons = () => {
-
-    setTimeout(() => {
       
       axios.get(`https://somacros-pokedex-api.herokuapp.com/api/pokemon?offset=${ this.state.pokedex.length }`)
       .then( pokemons => {
@@ -52,13 +50,10 @@ class App extends Component {
         } else {
           this.setState({ hasMore: false })
         }
-
-        console.log(pokemons);
   
       }).catch(err => {
         console.log(err);
       })
-    }, 1000);
 
   }
 
