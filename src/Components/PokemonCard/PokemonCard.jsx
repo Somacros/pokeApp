@@ -16,11 +16,6 @@ const PokedexCard = ( {pokemonName, pokemonID, pokemonDraw} ) => {
             <div className="tc  w-100">
                 <p className="helvetica mt2 di ml0 pa0 fw6 f5-l f6 tc"> { pokemonName } </p>
             </div>
-            {/*
-                pokemonTypes.forEach(pkmnType => {
-                    <Type type = {pkmnType}/>
-                })*/
-            }
         </div>
     );
 
