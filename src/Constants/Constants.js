@@ -1,12 +1,9 @@
 
-const API_BASEURL = 'http://localhost:8081/api';
-const API_TYPES_ENDPOINT = "/types";
-const API_POKEMONS_ENDPOINT = "/pokemon";
-const PORT = "8081";
+export const PORT = "8081";
+export const API_BASEURL_DEVELOPMENT = `http://localhost:${PORT}/api`;
+export const API_BASEURL_PRODUCTION = `https://somacros-pokedex-api.herokuapp.com/api`;
+export const API_TYPES_ENDPOINT = "/types";
+export const API_POKEMON_ENDPOINT = "/pokemon";
+export const API_POKEMON_TYPES_ENDPOINT = "/pokemon-types";
 
-module.exports = {
-    API_BASEURL,
-    API_TYPES_ENDPOINT,
-    API_POKEMONS_ENDPOINT,
-    PORT
-}
+
