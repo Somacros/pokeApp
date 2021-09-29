@@ -70,7 +70,7 @@ class App extends Component {
           hasMore={this.state.hasMore}
           loader={<LoadingPokeball/>}
         >
-            <div className="flex flex-wrap justify-center">
+            <div className="justify-center pokemonCardList">
             {
               this.state.pokedex.map(( pokemon, index, array ) => {
                 return <PokedexCard pokemonName = {pokemon.name} pokemonID = {index+1} pokemonDraw = {pokemon.draw} key = {index + 1} />
