@@ -1,9 +1,10 @@
 import React  from "react";
-import PokemonLogo from "./pokemonlogo.png";
+import PokemonLogo from "./pokemonlogo.svg";
+import './pokemonLogo.css';
 
 const Logo = () => {
     return (
-        <div className="tc mt3 mb5">
+        <div className="pokemonLogo">
             <img src={ PokemonLogo } className="w-70" alt="" />
         </div>
     );

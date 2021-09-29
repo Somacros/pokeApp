@@ -1,0 +1,16 @@
+.pokemonLogo img {
+    max-height: 250px;
+}
+
+.pokemonLogo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .pokemonLogo {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
