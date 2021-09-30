@@ -7,24 +7,58 @@ body {
     min-height: 100vh;
 }
 
+.pokemonCard {
+    padding: 20px 10px 20px 10px;
+}
+
 .pokemonCardList {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
-.pokemonCard img{
+.pokemonCard img {
     max-height: 230px;
     max-width: auto;
 }
 
 .pokemonSprite {
     background-color: #ebe8f0;
-background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.10' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.10' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pokemonName p {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.pokemonNumber p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media (max-width: 1250px) {
+    .pokemonCardList {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
 }
 
 @media (max-width: 550px) {
     .pokemonCard img {
         max-height: 110px;
+    }
+
+    .pokemonNumber p {
+        font-size: 0.6em;
+        font-weight: bold;
+    }
+
+    .pokemonCardList {
+        margin-left: 0em;
+        margin-right: 0em;
     }
 }

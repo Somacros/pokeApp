@@ -1,0 +1,18 @@
+.pokemonNumber {
+    background: linear-gradient(180deg, red 50%, white 50%);
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 1px;
+    height:0;
+    width:20%;
+    padding-bottom:20%;
+}
+
+.pokemonNumber p {
+    text-align: center;
+    line-height: 0px;
+}
+
+.pokemonTypes{
+    justify-content: center;
+}
