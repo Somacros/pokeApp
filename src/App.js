@@ -23,8 +23,8 @@ class App extends Component {
 
   componentDidMount() {
     
-    this.getMorePokemons(0);
     this.getPokemonTypes();
+    this.getMorePokemons(0);
     
   }
 
@@ -73,7 +73,7 @@ class App extends Component {
             <div className="justify-center pokemonCardList">
             {
               this.state.pokedex.map(( pokemon, index, array ) => {
-                return <PokedexCard pokemonName = {pokemon.name} pokemonID = {index+1} pokemonDraw = {pokemon.draw} key = {index + 1} />
+                return <PokedexCard pokemonName = {pokemon.name} pokemonID = {index+1} pokemonDraw = {pokemon.draw} pokemonTypes={pokemon.types} typesMap={this.state.types} key = {index + 1} />
                 })
             }
             </div>
